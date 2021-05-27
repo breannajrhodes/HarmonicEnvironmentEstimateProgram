@@ -1,0 +1,39 @@
+.root{
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 11px;
+
+}
+
+AnchorPane {
+    -fx-background-color: #acd6e5;
+}
+
+.table-view:row-selection .placeholder {
+    -fx-background-color: #f8d6fa;
+}
+
+.table-view .column-header-background .nested-column-header .table-column {
+    -fx-font-size: 12px;
+    -fx-background-color: #c7f1ee;
+    -fx-border-color: #7ebca6;
+}
+
+.table-view .nested-column-header .label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #121212;
+}
+
+TitledPane .text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #121212;
+}
+
+.button:hover {
+    -fx-text-fill: white!important;
+    -fx-background-color: #028679!important;
+}
+
+TitledPane .AnchorPane{
+    -fx-background-color: #b2b7b2;
+}
+

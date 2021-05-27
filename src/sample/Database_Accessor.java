@@ -12,7 +12,7 @@ public class Database_Accessor {
         ResultSet rs = null;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/harmonic_environment","root","");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/harmonic_environment","root","");
             pst = con.prepareStatement(query);
             rs = pst.executeQuery(query);
         } catch (ClassNotFoundException | SQLException e) {
@@ -25,7 +25,7 @@ public class Database_Accessor {
         Statement stmt= null;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/harmonic_environment","root","");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/harmonic_environment","root","");
             stmt = con.createStatement();
             String sql = query;
             stmt.execute(sql);

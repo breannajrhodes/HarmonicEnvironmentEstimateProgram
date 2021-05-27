@@ -24,21 +24,11 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../Desktop/drivers/mysql-connector-java-8.0.23.jar!/" />
+          <root url="jar://$USER_HOME$/OneDrive/Desktop/drivers/mysql-connector-java-8.0.23.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../CEN - Software Testing/SW Testing Project/mysql-connector-java-8.0.23.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="mysql-connector-java-8.0.23" level="project" />
   </component>
 </module>

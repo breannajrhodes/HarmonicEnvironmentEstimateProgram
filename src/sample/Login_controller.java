@@ -39,6 +39,7 @@ public class Login_controller {
         }else{
             username = txtfield_username.getText();
             password = txtfield_password.getText();
+            Main.current_user = new User(username, password);
             txtfield_username.clear();
             txtfield_password.clear();
             rs = accessor.access_database("SELECT username, password FROM "
@@ -59,6 +60,7 @@ public class Login_controller {
                 }
             }
         }
+
     }
 
     @FXML

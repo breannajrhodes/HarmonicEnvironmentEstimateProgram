@@ -23,8 +23,11 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Login_screen.fxml"));
+        Scene sceneMain = new Scene(root);
+        primaryStage.setScene(sceneMain);
+        sceneMain.getStylesheets().add(Main.class.getResource("layout.css").toExternalForm());
         primaryStage.setTitle("Harmonic Environment Estimator");
-        primaryStage.setScene(new Scene(root, 710, 620));
+        //primaryStage.setScene(new Scene(root, 710, 620));
         primaryStage.show();
     }
 
@@ -41,7 +44,7 @@ public class Main extends Application {
             e.printStackTrace();
         }
         Scene newScene = new Scene(newRoot);
-       // newScene.getStylesheets().add(Main.class.getResource("Style.css").toExternalForm());
+        newScene.getStylesheets().add(Main.class.getResource("layout.css").toExternalForm());
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(newScene);
         window.show();

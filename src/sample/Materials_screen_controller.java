@@ -1,7 +1,6 @@
 package sample;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -146,8 +145,6 @@ public class Materials_screen_controller {
         accessor.update_database("DELETE FROM materials"
                 + " WHERE materialName = '" + name +"'");
         tblview_materials.getItems().remove(current_material);
-
-
     }
 
     @FXML
